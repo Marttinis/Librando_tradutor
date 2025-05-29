@@ -11,6 +11,29 @@ import letterEGesture from './gestures/LetterEGesture'
 import letterFGesture from './gestures/LetterFGesture'
 import letterGGesture from './gestures/LetterGGesture'
 import letterHGesture from './gestures/LetterHGesture'
+import letterIGesture from './gestures/LetterIGesture'
+import letterJGesture from './gestures/LetterJGesture'
+import letterKGesture from './gestures/LetterKGesture'
+import letterLGesture from './gestures/LetterLGesture'
+import letterMGesture from './gestures/LetterMGesture'
+import letterNGesture from './gestures/LetterNGesture'
+import letterOGesture from './gestures/LetterOGesture'
+import letterPGesture from './gestures/LetterPGesture'
+import letterQGesture from './gestures/LetterQGesture'
+import letterRGesture from './gestures/LetterRGesture'
+import letterSGesture from './gestures/LetterSGesture'
+import letterTGesture from './gestures/LetterTGesture'
+import letterUGesture from './gestures/LetterUGesture'
+import letterVGesture from './gestures/LetterVGesture'
+import letterWGesture from './gestures/LetterWGesture'
+import letterXGesture from './gestures/LetterXGesture'
+import letterYGesture from './gestures/LetterYGesture'
+
+
+
+
+
+
 
 
 
@@ -32,7 +55,25 @@ function App() {
         letterEGesture,
         letterFGesture,
         letterGGesture,
-        letterHGesture
+        letterHGesture,
+        letterIGesture,
+        letterJGesture,
+        letterKGesture,
+        letterLGesture,
+        letterMGesture,
+        letterNGesture,
+        letterOGesture,
+        letterPGesture,
+        letterQGesture,
+        letterRGesture,
+        letterSGesture,
+        letterTGesture,
+        letterUGesture,
+        letterVGesture,
+        letterWGesture,
+        letterXGesture,
+        letterYGesture,
+        //  não é viável reconhecer o Z com fingerpose
       ])
 
 

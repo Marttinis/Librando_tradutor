@@ -158,7 +158,7 @@ function App() {
         }}
       />
       <div style={{ marginTop: '500px', fontSize: '2rem' }}>
-        {gesture ? `✋ Tradução: Letra ${gesture}` : '⏳ Nenhum gesto detectado'}
+        {gesture ? `✋ Tradução: Letra ${gesture}` : '⏳ Nenhum sinal detectado'}
       </div>
     </div>
   )

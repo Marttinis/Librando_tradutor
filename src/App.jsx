@@ -148,7 +148,7 @@ return (
       color: '#111',
     }}
   >
-    <h2 style={{ margin: '1rem 0' }}>🧠 Tradutor de Libras - Alfabeto Manual</h2>
+    <h2 style={{ margin: '1rem 0', textAlign: 'center' }}>Interpretador de Libras</h2>
 
     <div style={{ position: 'relative', width: 640, height: 480 }}>
       <Webcam
@@ -176,7 +176,7 @@ return (
     </div>
 
     <div style={{ marginTop: '1.5rem', fontSize: '2rem' }}>
-      {gesture ? `✋ Tradução: Letra ${gesture}` : '⏳ Nenhum sinal detectado'}
+      {gesture ? `Tradução: Letra ${gesture}` : '⏳ Nenhum sinal detectado'}
     </div>
   </div>
 )

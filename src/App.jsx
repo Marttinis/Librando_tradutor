@@ -145,7 +145,7 @@ return (
       alignItems: 'center',
       justifyContent: 'start',
       backgroundColor: 'white',
-      color: 'white',
+      color: '#111',
     }}
   >
     <h2 style={{ margin: '1rem 0' }}>🧠 Tradutor de Libras - Alfabeto Manual</h2>

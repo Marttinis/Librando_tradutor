@@ -133,8 +133,22 @@ function App() {
   }, [])
 
 return (
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-    <h2>🧠 Tradutor de Libras - Alfabeto Manual</h2>
+  <div
+    style={{
+      margin: 0,
+      padding: 0,
+      boxSizing: 'border-box',
+      height: '100vh',
+      width: '100vw',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'start',
+      backgroundColor: '#111',
+      color: 'white',
+    }}
+  >
+    <h2 style={{ margin: '1rem 0' }}>🧠 Tradutor de Libras - Alfabeto Manual</h2>
 
     <div style={{ position: 'relative', width: 640, height: 480 }}>
       <Webcam
@@ -161,11 +175,12 @@ return (
       />
     </div>
 
-    <div style={{ marginTop: '1rem', fontSize: '2rem' }}>
+    <div style={{ marginTop: '1.5rem', fontSize: '2rem' }}>
       {gesture ? `✋ Tradução: Letra ${gesture}` : '⏳ Nenhum sinal detectado'}
     </div>
   </div>
 )
+
 
 }
 

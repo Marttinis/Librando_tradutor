@@ -132,54 +132,66 @@ function App() {
     runHandpose()
   }, [])
 
-return (
-  <div
-    style={{
-      margin: 0,
-      padding: 0,
-      boxSizing: 'border-box',
-      height: '100vh',
-      width: '100vw',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'start',
-      backgroundColor: 'white',
-      color: '#111',
-    }}
-  >
-    <h2 style={{ margin: '1rem 0', textAlign: 'center' }}>Interpretador de Libras</h2>
+  return (
+    <div
+      style={{
+        margin: 0,
+        padding: 0,
+        boxSizing: 'border-box',
+        height: '100vh',
+        width: '100vw',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'start',
+        backgroundColor: 'white',
+        color: '#111',
+      }}
+    >
+      <h2 style={{ margin: '1rem 0', textAlign: 'center' }}>Interpretador de Libras</h2>
 
-    <div style={{ position: 'relative', width: 640, height: 480 }}>
-      <Webcam
-        ref={webcamRef}
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: 640,
-          height: 480,
-          zIndex: 1,
-        }}
-      />
-      <canvas
-        ref={canvasRef}
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: 640,
-          height: 480,
-          zIndex: 2,
-        }}
-      />
-    </div>
+      <div style={{ position: 'relative', width: 640, height: 480 }}>
+        <Webcam
+          ref={webcamRef}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: 640,
+            height: 480,
+            zIndex: 1,
+          }}
+        />
+        <canvas
+          ref={canvasRef}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: 640,
+            height: 480,
+            zIndex: 2,
+          }}
+        />
+      </div>
 
-    <div style={{ marginTop: '1.5rem', fontSize: '2rem' }}>
-      {gesture ? `Tradução: Letra ${gesture}` : '⏳ Nenhum sinal detectado'}
+      <div
+        style={{
+          marginTop: '1.5rem',
+          fontSize: '2rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: '80px', // define uma altura visível para centralizar verticalmente
+          width: '100%',
+          textAlign: 'center',
+        }}
+      >
+        {gesture ? `Tradução: Letra ${gesture}` : '⏳ Nenhum sinal detectado'}
+      </div>
+
     </div>
-  </div>
-)
+  )
 
 
 }

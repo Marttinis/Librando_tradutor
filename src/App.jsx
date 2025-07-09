@@ -132,15 +132,17 @@ function App() {
     runHandpose()
   }, [])
 
-  return (
-    <div style={{ textAlign: 'center', position: 'relative' }}>
-      <h2>🧠 Tradutor de Libras - Alfabeto Manual</h2>
+return (
+  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <h2>🧠 Tradutor de Libras - Alfabeto Manual</h2>
+
+    <div style={{ position: 'relative', width: 640, height: 480 }}>
       <Webcam
         ref={webcamRef}
         style={{
           position: 'absolute',
-          left: 0,
           top: 0,
+          left: 0,
           width: 640,
           height: 480,
           zIndex: 1,
@@ -150,18 +152,21 @@ function App() {
         ref={canvasRef}
         style={{
           position: 'absolute',
-          left: 0,
           top: 0,
+          left: 0,
           width: 640,
           height: 480,
           zIndex: 2,
         }}
       />
-      <div style={{ marginTop: '500px', fontSize: '2rem' }}>
-        {gesture ? `✋ Tradução: Letra ${gesture}` : '⏳ Nenhum sinal detectado'}
-      </div>
     </div>
-  )
+
+    <div style={{ marginTop: '1rem', fontSize: '2rem' }}>
+      {gesture ? `✋ Tradução: Letra ${gesture}` : '⏳ Nenhum sinal detectado'}
+    </div>
+  </div>
+)
+
 }
 
 export default App
